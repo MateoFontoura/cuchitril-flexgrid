@@ -1,0 +1,1 @@
+Este proyecto de pagina web, es dedicado a una empresa que trabaja en el sector de la serigrafia.

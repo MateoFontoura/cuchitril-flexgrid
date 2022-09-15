@@ -1,0 +1,546 @@
+
+/* Para todo el html: Apertura; */
+
+
+header{
+	background-color: #98CE54;
+}
+
+body{font-family: 'Courier Prime', monospace;
+	overflow-wrap: hidden;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+main{
+	font-size: 20px;
+	overflow: auto;
+	padding-bottom: 2rem;
+}
+
+/*h1{ 
+  font-weight: bold; 
+  text-transform: uppercase;
+  font-size: 48px;
+} */
+
+h1 {
+	font-weight: bold; 
+	text-transform: uppercase;
+	font-size: 48px;
+	animation-duration: 3s;
+	animation-name: aparecer;
+	animation-iteration-count: 1;
+}
+
+
+@keyframes aparecer {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+
+
+h2{ 
+	font-weight: bold; 
+	text-transform: uppercase;
+	font-size: 38px;
+} 
+
+h3{ 
+	font-weight: bold; 
+	text-transform: uppercase;
+	font-size: 28px;
+} 
+
+ol{
+	list-style-type: none;
+}
+
+.titulo{
+	color: #98CE54;
+	text-align: center;
+	background-color: black;
+	width: 270px;
+	margin: auto;
+	margin-bottom:1rem;
+	margin-top: 1rem;
+}
+
+
+
+/* Para todo el html: Cierre */
+
+
+
+/* Headear:Apertura */
+
+
+@media screen and (min-width: 700px){
+.gridDescripcion{
+	background-color: #98CE54;
+	align-items: center;
+	display: grid;
+	grid-template-areas:
+	"logo descripcion";
+	grid-template-rows: auto;
+	grid-template-columns: 2fr 9fr;
+}
+
+.logo{
+	grid-area: logo;
+	height: 90%;
+	width: 90%;
+}
+
+.descripcion{
+	grid-area: descripcion;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+
+nav ul{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: center;
+	grid-column-gap: 3rem;
+	list-style-type: none;
+	padding-bottom: 1rem;
+	transition: 2s;
+}
+nav ul:hover {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: center;
+	grid-column-gap: 1rem;
+	list-style-type: none;
+	padding-bottom: 1rem;
+	transform: scale(1.4,2);
+}
+
+}
+
+/* Headear:Cierre */
+
+
+
+/* Footer:Apertura */
+
+
+.footer{
+	background-color: black;
+	display: grid;
+	grid-template-areas: "imgFooter textFooter";
+	grid-column: auto auto;
+}
+
+.imgFooter{
+	grid-area: imgFooter;
+}
+
+.textFooter{
+	grid-area: textFooter;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+}
+
+
+
+
+/* Footer:Cierre */
+
+
+
+/*Index: Apertura */
+
+
+
+.fondoIndex{
+	background-image: url(https://i.pinimg.com/originals/29/7f/f6/297ff67061e650c83441cd466530f3b8.jpg);
+	background-position: top center;
+}
+
+.imgMain{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	justify-items:center;
+}
+
+.imgMainTamano{
+	height: 95%;
+	width: 95%;
+}
+
+.juntos{
+	justify-content: space-around;
+	display: grid;
+	grid-template-areas: 
+	"imgJuntos imgJuntos1"
+	"textJuntos textJuntos1"
+	"imgJuntos2 imgJuntos3"
+	"textJuntos2 textJuntos3";
+	grid-template-rows: 2fr auto 2fr auto;
+	grid-template-columns:50% 50%; 
+	padding-left: 5%;
+}
+
+.imgJuntos{
+	grid-area: imgJuntos;
+	height: 90%;
+	width: 90%;
+	padding-top: 2rem;
+}
+
+.imgJuntos1{
+	grid-area: imgJuntos1;
+	height: 90%;
+	width: 90%;
+	padding-top: 2rem;
+}
+
+.textJuntos{
+	grid-area: textJuntos;
+	background-color:#98CE54 ;
+	text-align: center;
+	height: 100%;
+	width: 90%;
+}
+.textJuntos1{
+	grid-area: textJuntos1;
+	background-color:#98CE54 ;
+	text-align: center;
+	height: 100%;
+	width: 90%;
+
+}
+.imgJuntos2{
+	grid-area: imgJuntos2;
+	height: 90%;
+	width: 90%; 
+	padding-top: 2rem;
+}
+
+.imgJuntos3{
+	grid-area: imgJuntos3;
+	height: 90%;
+	width: 90%;
+	padding-top: 2rem;
+}
+
+.textJuntos2{
+	grid-area: textJuntos2;
+	background-color:#98CE54 ;
+	text-align: center;
+	height: 100%;
+	width: 90%;
+
+}
+.textJuntos3{
+	grid-area: textJuntos3;
+	background-color:#98CE54 ;
+	text-align: center;
+	height: 100%;
+	width: 90%;
+}
+
+
+
+/* Index:Cierre */
+
+
+
+/* Productos:Apertura */
+
+
+
+.fondoProductos{
+	background-image: url(https://img.freepik.com/vector-gratis/moda-accesorios-ropa-patrones-fisuras_1284-3636.jpg?w=2000);
+	background-position: top center;
+}
+
+.deATres{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows:  repeat(14, auto);
+	justify-items:center;
+	justify-content: space-around;
+}
+
+.imgProductos{
+	height: 90%;
+	width: 90%;
+}
+
+
+
+
+
+
+/* Productos:Cierre */
+
+
+
+/* Guia:Apertura */
+
+
+
+.fondoGuia{
+	background-image: url(https://w0.peakpx.com/wallpaper/629/102/HD-wallpaper-brown-ruler-with-stand.jpg);
+}
+.guia{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.imgGuia{
+	width: 60%;
+	height: 60%;
+	padding-bottom: 2rem;
+	margin: 0rem 2rem 0rem 2rem;
+}
+
+.textGuia{
+	background-color: white;
+	filter: opacity(70%);
+	margin: 0rem 2rem 0rem 2rem;
+}
+
+
+
+
+/* Guia:Cierre */
+
+
+
+/* te_contamos:Apertura */
+
+
+
+.fondoContamos{
+	background-image: url(https://cdn.ipadizate.com/2019/10/ios-4-1.jpg);
+}
+
+.videoJuntos{
+	display: grid;
+	grid-template-areas: 
+	"video1 video2";
+	grid-template-columns:50% 50%;
+	align-items: center;
+	justify-items: center;
+
+}
+.video1{
+	grid-area: video1;
+	height: 70%;
+	width: 70%;
+	
+}
+
+.video2{
+	grid-area: video2;
+	height: 70%;
+	width: 70%;
+
+}
+
+.juntosContamos{
+	display: grid;
+	grid-template-areas: 
+	"logoViejo logoNuevo";
+	grid-template-columns: 50% 50%;
+	justify-content: space-around;
+	padding: 5px 0px 5px 0px;
+	align-items: center;
+	justify-items: center;
+}
+
+.logoViejo{
+	grid-area: logoViejo;
+	height: 90%;
+	width: 90%;
+}
+
+.logoNuevo{
+	grid-area: logoNuevo;
+	height: 90%;
+	width: 90%;
+}
+
+
+
+/* te_contamos:Cierre */
+
+
+
+/* Contactos:Apertura */
+
+
+
+.fondoContactos{
+	background-image: url(https://previews.123rf.com/images/hchjjl/hchjjl1506/hchjjl150601688/40716025-libro-de-contactos-doodle-de-fondo-sin-fisuras-patr%C3%B3n.jpg);
+	background-position: top center;
+}
+
+.form{
+	border-width: 5px;
+	border-style: dotted;
+	border-color: black;
+	padding: 3rem;
+	margin: 3rem;
+	background-color: gray;
+}
+
+.center{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	justify-items:center;
+}
+
+.imgContacto{
+	height: 190%;
+	width: 90%;
+}
+
+
+
+/* Contactos:Cierre */
+
+
+
+/* Media Queire Mobile */
+
+
+@media screen and (max-width: 699px){
+
+
+	/* Todo el body:Apertura; */
+
+	h1{ 
+ 		font-size: 40px;
+} 
+
+	h2{   		
+  		font-size: 28px;
+} 
+
+	h3{ 
+ 		font-size: 18px;
+} 
+
+	p{
+		font-size: 14px;
+}
+
+	.titulo{
+		width: 220px;	
+}
+
+	/* Todo el body:Cierre; */
+
+	/*Header:Apertura; */
+	.gridDescripcion{
+		background-color: #98CE54;
+		align-items: center;
+		display: grid;
+		grid-template-areas:
+		"logo descripcion";
+		grid-template-rows: auto;
+		grid-template-columns: 3fr 9fr;
+}
+.logo{
+		height: 100%;
+		width: 100%;
+}
+
+	nav{
+		grid-area: nav;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+}
+
+	/*Header:Cierre;*/
+
+	/*Index:Apertura;*/
+
+	.imgMainTamano{
+		height: 80%;
+		width: 90%;
+}
+
+	/*Index:Cierre;*/
+
+	/*Guia:Apertura;*/
+	.guia{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	.imgGuia{
+	width: 90%;
+	height: 90%;
+	padding-bottom: 2rem;
+	margin: 0rem 1rem 0rem 1rem;
+}
+
+	.textGuia{
+	background-color: white;
+	filter: opacity(70%);
+	margin: 0rem 1rem 0rem 1rem;
+}
+}
+
+/*Guia:Cierre;*/
+
+/*Footer:Apertura;*/
+
+
+
+/*Footer:Cierre;*/
+
+/*Contactos:Apertura;*/
+.imgContacto{
+	height: 80%;
+	width: 90%;
+}
+
+/*Contactos:Cierre;*/
+
+
+/*
+background-color		color de fondo 
+font-size               tamanio de letra
+list-style-type        binietas 
+font-family			tipografia
+text-align			 alineacion de texto 
+line-heigth 		interlineado 
+text-decoration none  		 sacar delineado
+background-image url       fondo de pantalla
+width        ancho
+height      alto
+overflow    
+border      borde
+padding 
+margin      margen
+display inline  modificar de bloque a en línea y al contrario   
+
+display: flex;
+	flex-direction: row;
+	justify-content: space-around;
